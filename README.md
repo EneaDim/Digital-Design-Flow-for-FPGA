@@ -50,13 +50,14 @@ Walkthrough <https://github.com/ddm/icetools>
 
 ***Description of the flow:***
 
-## SystemVerilog Design
+
+# SystemVerilog Design
 
 Really simple design: unsigned multiplier.
 
 SystemVerilog is an HDL very usefull in order to design and also to perform verification, and also for UVM.
 
-## Design Verification
+# Design Verification
 
 The DV is performed using COCOTB.<br/>
 Cocotb is a COroutine based COsimulation TestBench environment for verifying VHDL and SystemVerilog RTL using Python.<br/> Cocotb encourages the same philosophy of design re-use and randomized testing as UVM. 
@@ -69,7 +70,7 @@ Drive and monitor phases on the interfaces of the device under test are simple t
 
 The waveforms of the testbench can be seen through GTKWAVE.
 
-## Synthesys
+# Synthesys
 
 The synthesis is done using YOSYS. A popular synthesys tool for FPGAs.<br/>
 **Steps:**
@@ -81,9 +82,9 @@ The synthesis is done using YOSYS. A popular synthesys tool for FPGAs.<br/>
 6. Mapping to internal cell library with *abc*
 7. Synthetize for ice-40 FPGAs
 
-## Place&Route
+# Place&Route
 
 The P&R is done with nextpnr-ice40. A tool used to implement P&R for ice-40 FPGAs.<br/> The .asc file that describes the Place&Route on ice-40 FPGA can be viewed on <https://knielsen.github.io/ice40_viewer/ice40_viewer.html>
 
-### Bitstream Generation
+# Bitstream Generation
 The Bitstream Generation is driven using icestorm in order to implement it on an ice-40 FPGA.
