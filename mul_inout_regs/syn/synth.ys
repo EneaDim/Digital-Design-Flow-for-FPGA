@@ -1,0 +1,44 @@
+# read files
+read_verilog -sv rtl/*.sv
+
+# check design hierarchy
+hierarchy -check -top unsigned_mult
+
+# translate processes (always blocks)
+proc
+opt
+
+# detect and optimize FSM encodings
+fsm
+opt
+
+# implement memories (arrays)
+memory
+opt
+
+# convert design to (logical) gate-level netlists
+techmap
+opt
+
+# map internal register types to the ones from the cell library
+#dfflibmap -liberty cells.lib
+
+# mapping to internal cell library
+abc
+opt
+
+# synth_ice40
+synth_ice40
+opt
+
+# cleanup
+clean
+
+# show
+show
+
+# write verilog
+write_verilog unsigned_mult_synth.v
+
+# write json
+write_json unsigned_mult_synth.json
