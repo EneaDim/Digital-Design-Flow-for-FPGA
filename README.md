@@ -1,10 +1,9 @@
-# DIGITAL DESING FLOW
+# DIGITAL DESIGN FLOW
 
 # Design / Design Verification / Synthesys / Place&Route / Bitstream Generation on FPGA
 
 A unique flow to integrate all the steps during digital design of ASICs.
 
-Directory structure:
 
 . Designs:
 - Combinational Multiplier
@@ -42,11 +41,13 @@ Build it with the GUI.
 ## SystemVerilog Design
 
 Really simple design: unsigned multiplier.
+
 SystemVerilog is an HDL very usefull in order to design and also to perform verification, and also for UVM.
 
 ## Design Verification
 
 The DV is performed using COCOTB.
+<<<<<<< HEAD
 Cocotb is a COroutine based COsimulation TestBench environment for verifying VHDL and SystemVerilog RTL using Python.__ Cocotb encourages the same philosophy of design re-use and randomized testing as UVM, however is implemented in Python. 
 Drive and monitor phases on the interfaces of the device under test are simple to implement, so also a check and compare with the model can be easily done, and all of this is done in Python.
 
@@ -59,6 +60,30 @@ The synthesis is done using YOSYS. A popular synthesys tool for FPGAs.
 ## Place&Route
 
 The P&R is done with nextpnr-ice40. A tool used to implement P&R for ice-40 FPGAs.
+=======
+
+The waveforms can be seen through GTKWAVE.
+
+### Requirements to perform verification e visualize waveforms
+
+pip install cocotb
+
+apt install gtkwave
+
+## Synthesys
+
+The synthesis is done using YOSYS.
+
+### Requirements to Synthetize
+
+Walkthrough <https://github.com/YosysHQ/yosys>
+
+## Place&Route
+
+The P&R is done with nextpnr-ice40.
+
+### Requirements to Place&Route
+>>>>>>> b28f40e2afd2d619e925df02c9ad200c81b8c605
 
 ## Bitstream Generation
 The Bitstream Generation is driven using icestorm in order to implement it on an ice-40 FPGA.
