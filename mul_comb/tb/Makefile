@@ -1,5 +1,7 @@
 # Makefile
 
+TOPLEVEL_LANG = verilog
+
 PWD = $(shell pwd)
 
 # Import path for model used in tb_mul.py file

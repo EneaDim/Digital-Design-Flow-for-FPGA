@@ -21,6 +21,10 @@ SYNDIR = syn
 PLACEROUTE = nextpnr-ice40
 PLACEROUTEDIR = pr
 
+# Bitstream
+BITSTREAMPACK = icepack 
+BITSTREAMPROG = iceprog 
+
 all: clean simulate view synth placeroute
 
 simulate:
@@ -35,9 +39,11 @@ synth:
 	@mv $(TOP)_synth.json ./$(SYNDIR)/
 
 placeroute:
-	@mkdir $(PLACEROUTEDIR)
 	@$(PLACEROUTE) --json ./$(SYNDIR)/$(TOP)_synth.json  --asc ./$(PLACEROUTEDIR)/$(TOP)_synth.asc 
 
+bitstream:
+	@$(BITSTREMPACK) $(PLACEROUTEDIR)/$(TOP)_synth.asc $(TOP).bin
+	@$(BITSTREAMPROG) $(TOP).bin
 clean:
 	rm -rf $(MODEL)/__pycache__/
 	rm -rf $(COCOTB)/__pycache__/
