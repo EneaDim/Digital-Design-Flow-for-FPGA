@@ -1,6 +1,6 @@
 # DIGITAL DESIGN FLOW
 
-# *Design / Design Verification / Synthesys / Place&Route / Bitstream Generation for FPGA*
+## *Design / Design Verification / Synthesys / Place&Route / Bitstream Generation for FPGA*
 
 A unique flow to integrate all the steps during digital design of ASICs.
 
