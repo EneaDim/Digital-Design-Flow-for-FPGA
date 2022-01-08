@@ -51,8 +51,7 @@ SystemVerilog is an HDL very usefull in order to design and also to perform veri
 
 ## Design Verification
 
-The DV is performed using COCOTB.
-<<<<<<< HEAD
+The DV is performed using COCOTB.__
 Cocotb is a COroutine based COsimulation TestBench environment for verifying VHDL and SystemVerilog RTL using Python.__ Cocotb encourages the same philosophy of design re-use and randomized testing as UVM, however is implemented in Python. 
 Drive and monitor phases on the interfaces of the device under test are simple to implement, so also a check and compare with the model can be easily done, and all of this is done in Python.
 
