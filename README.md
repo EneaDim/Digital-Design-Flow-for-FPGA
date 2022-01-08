@@ -58,7 +58,7 @@ Drive and monitor phases on the interfaces of the device under test are simple t
 - Driver to set the inputs of the DUT
 - Monitor to look at the ouputs of the DUT
 - Model the check the behavior of the DUT
-<img src="cocotb_test_arch.png">
+<img src="test_arch.png">
 
 The waveforms of the testbench can be seen through GTKWAVE.
 
