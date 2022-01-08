@@ -47,7 +47,7 @@ Build it with the GUI.
 Walkthrough <https://github.com/ddm/icetools>
 
 
-#DESCRIPTION OF THE FLOW
+# ***Description of the flow***
 
 
 ## SystemVerilog Design
