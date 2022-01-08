@@ -4,10 +4,14 @@
 
 A unique flow to integrate all the steps during digital design of ASICs.
 
+#
+
 ***Designs:***
 
 - Combinational Multiplier
 - Multiplier with IN/OUT regs
+
+#
 
 ***Directory structure for each design:***
 
@@ -16,6 +20,8 @@ A unique flow to integrate all the steps during digital design of ASICs.
 - tb   : it contains the python file that implements the testbench.<br/> It drives the inputs and monitors the outputs, comparing them with the model.<br/> The simulation is driven by cocotb. 
 - syn  : it contains the yosys script to synthetize the design for an FPGA.<br/> It contains also the Verilog description of the synthesis and the json file which also describes the design and will be used as input for the Place & Route flow.
 - pr   : it contains the .asc file which describes the Place & Route for an ice-40 FPGA.
+
+#
 
 ***Requirement to implement this flow:***
 
@@ -40,6 +46,7 @@ Build it with the GUI.
 
 Walkthrough <https://github.com/ddm/icetools>
 
+#
 
 ***Description of the flow:***
 
