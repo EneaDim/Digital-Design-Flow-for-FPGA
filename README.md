@@ -1,21 +1,23 @@
 # DIGITAL DESIGN FLOW
 
-# Design / Design Verification / Synthesys / Place&Route / Bitstream Generation on FPGA
+# Design / Design Verification / Synthesys / Place&Route / Bitstream Generation for FPGA
 
 A unique flow to integrate all the steps during digital design of ASICs.
 
 
-. Designs:
+*Designs:*
 - Combinational Multiplier
 - Multiplier with IN/OUT regs
 
-. Directory structure for each design:
+*Directory structure for each design:*
 
 - model: it contains the python model of the design.
 - rtl  : it contains the HDL files that implements the design, SystemVerilog is used as HDL.
 - tb   : it contains the python file that implements the testbench.__ It drives the inputs and monitors the outputs, comparing them with the model.__ The simulation is driven by cocotb. 
 - syn  : it contains the yosys script to synthetize the design for an FPGA.__ It contains also the Verilog description of the synthesis and the json file which also describes the design and will be used as input for the Place & Route flow.
 - pr   : it contains the .asc file which describes the Place & Route for an ice-40 FPGA.
+
+*Requirement to implement this flow:*
 
 ### Requirements to perform simulation, verification and visualize waveforms
 
@@ -38,6 +40,8 @@ Build it with the GUI.
 
 Walkthrough <https://github.com/ddm/icetools>
 
+
+*Description of the flow:*
 
 ## SystemVerilog Design
 
