@@ -7,7 +7,7 @@ A unique flow to integrate all the steps during digital design of ASICs.
 
 . Designs:
 - Combinational Multiplier
-- Multiplier wit IN/OUT regs
+- Multiplier with IN/OUT regs
 
 . Directory structure for each design:
 
@@ -29,10 +29,6 @@ Walkthrough <https://github.com/YosysHQ/yosys>
 
 
 ### Requirements to Place&Route
-
-Walktrhough <https://github.com/steveicarus/iverilog>
-
-Walktrhough <https://github.com/ddm/icetools>
 
 Walkthrough <https://github.com/YosysHQ/nextpnr>
 
