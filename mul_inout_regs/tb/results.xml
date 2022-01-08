@@ -1,7 +1,0 @@
-<testsuites name="results">
-  <testsuite name="all" package="all">
-    <property name="random_seed" value="1641674105" />
-    <testcase name="tb_mul" classname="tb_mul" file="/home/enea/Desktop/HW_SW/Digital_HW/Verification/Cocotb/mul/mul_inout_regs/tb/tb_mul.py" lineno="20" time="0.17779302597045898" sim_time_ns="2005.001" ratio_time="11277.163370475166" />
-    <testcase name="tb_mul_locally" classname="tb_mul" file="/home/enea/Desktop/HW_SW/Digital_HW/Verification/Cocotb/mul/mul_inout_regs/tb/tb_mul.py" lineno="51" time="0.014591455459594727" sim_time_ns="175.00099999999998" ratio_time="11993.388903841438" />
-  </testsuite>
-</testsuites>
