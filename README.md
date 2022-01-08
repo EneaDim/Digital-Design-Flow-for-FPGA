@@ -1,15 +1,15 @@
 # DIGITAL DESIGN FLOW
 
-# Design / Design Verification / Synthesys / Place&Route / Bitstream Generation for FPGA
+# *Design / Design Verification / Synthesys / Place&Route / Bitstream Generation for FPGA*
 
 A unique flow to integrate all the steps during digital design of ASICs.
 
+***Designs:***
 
-*Designs:*
 - Combinational Multiplier
 - Multiplier with IN/OUT regs
 
-*Directory structure for each design:*
+***Directory structure for each design:***
 
 - model: it contains the python model of the design.
 - rtl  : it contains the HDL files that implements the design, SystemVerilog is used as HDL.
@@ -17,7 +17,7 @@ A unique flow to integrate all the steps during digital design of ASICs.
 - syn  : it contains the yosys script to synthetize the design for an FPGA.<br/> It contains also the Verilog description of the synthesis and the json file which also describes the design and will be used as input for the Place & Route flow.
 - pr   : it contains the .asc file which describes the Place & Route for an ice-40 FPGA.
 
-*Requirement to implement this flow:*
+***Requirement to implement this flow:***
 
 ### Requirements to perform simulation, verification and visualize waveforms
 
@@ -41,7 +41,7 @@ Build it with the GUI.
 Walkthrough <https://github.com/ddm/icetools>
 
 
-*Description of the flow:*
+***Description of the flow:***
 
 ## SystemVerilog Design
 
@@ -59,7 +59,15 @@ The waveforms of the testbench can be seen through GTKWAVE.
 
 ## Synthesys
 
-The synthesis is done using YOSYS. A popular synthesys tool for FPGAs.
+The synthesis is done using YOSYS. A popular synthesys tool for FPGAs.<br/>
+**Steps:**
+1. Read files
+2. Set TOP module
+3. Translate Process Blocks / Always Blocks
+4. Detect and optimize FSM (Not used actually, but necessary for further implementation)
+5. Covert design into logical netlist with *techmap*
+6. Mapping to internal cell library with *abc*
+7. Synthetize for ice-40 FPGAs
 
 ## Place&Route
 
