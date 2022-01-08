@@ -32,11 +32,11 @@ The synthesis is done using YOSYS.
 
 ### Requirements to Synthetize
 
-VWalkthrough <https://github.com/YosysHQ/yosys>
+Walkthrough <https://github.com/YosysHQ/yosys>
 
 ## Place&Route
 
-The P&R is done with nextpnr-ice40
+The P&R is done with nextpnr-ice40.
 
 ### Requirements to Place&Route
 
