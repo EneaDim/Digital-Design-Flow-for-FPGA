@@ -25,7 +25,7 @@ PLACEROUTEDIR = pr
 BITSTREAMPACK = icepack 
 BITSTREAMPROG = iceprog 
 
-all: clean simulate view synth placeroute
+all: clean simulate view synth placeroute bitstream
 
 simulate:
 	$(MAKE) -C ${COCOTB}
