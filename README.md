@@ -49,7 +49,6 @@ Walkthrough <https://github.com/ddm/icetools>
 #
 
 ***Description of the flow:***
-
 #
 
 ## SystemVerilog Design
