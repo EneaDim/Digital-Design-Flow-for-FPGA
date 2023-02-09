@@ -27,7 +27,7 @@ A unique flow to integrate all the steps during digital design of ASICs.
 
 ### Requirements to perform simulation, verification and visualize waveforms
 
-- Design : <https://github.com/steveicarus/iverilog> or other simulator for SystemVerilog files.
+- Design Simulation: <https://github.com/steveicarus/iverilog> or other simulator for SystemVerilog files.
 - Design Verification : <https://github.com/cocotb/cocotb>
 - Waveform visualization : <https://github.com/gtkwave/gtkwave>
 
