@@ -1,4 +1,4 @@
-# DIGITAL DESIGN FLOW
+# DIGITAL DESIGN FLOW for FPGA
 
 ## *Design / Design Verification / Synthesys / Place&Route / Bitstream Generation for FPGA*
 
